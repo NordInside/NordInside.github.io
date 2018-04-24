@@ -14,7 +14,7 @@ body input:required:valid, body textarea:required:valid { color: green; }
 
 .hidden { display: none; }
 
-header { min-height: 640px; background-image: url(/img/top_bg.jpg); background-position: top center; background-size: cover; color: #fff; padding-top: 32px; padding-bottom: 40px; }
+header { min-height: 640px; background-image: url(../img/top_bg.jpg); background-position: top center; background-size: cover; color: #fff; padding-top: 32px; padding-bottom: 40px; }
 
 .logo { font-size: 40px; font-family: "RobotoBold", sans-serif; font-weight: bold; }
 
