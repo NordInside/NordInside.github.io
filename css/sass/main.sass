@@ -1,0 +1,330 @@
+@import "bourbon/bourbon"
+
+
+$text-color: #333
+$dark-color: #000
+$red-color: #9B1818
+$blue-color: #003469
+$green-color: #67bc5c
+
+body
+		font-family: "RobotoRegular", sans-serif
+		color: $text-color
+		font-weight: normal
+		font-size: 16px
+		min-width: 320px
+		position: relative
+		line-height: 1.42857
+		-webkit-font-smoothing: antialised
+
+
+h1
+ color: #fff
+ font-size: 60px
+ line-height: 56px
+ font-weight: bold
+ font-family: "CleanvertisingLight", sans-serif
+	margin: 0
+
+section
+ padding: 58px 0 68px
+	&.s_dark
+		h2, h3, p
+			color: #fff
+	h2
+		color: $blue-color
+		font-size: 50px
+		line-height: 56px
+		margin-bottom: 50px
+		font-family: "CleanvertisingLight", sans-serif
+		text-align: center
+		margin-top: 0
+		font-weight: normal
+		
+p strong
+	font-family: "RobotoBold", sans-serif
+	font-weight: normal
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+	box-shadow: $red-color 0 0 0 2px
+	border-color: $red-color
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+.hidden
+	display: none
+	
+header 
+	min-height: 640px
+	background-image: url(../img/top_bg.jpg)
+	background-position: top center
+	background-size: cover
+	color: #fff
+	padding-top: 32px
+	padding-bottom: 40px
+	
+.logo
+	font-size: 40px
+	font-family: "RobotoBold", sans-serif
+	font-weight: bold
+	
+.top_phone 
+	text-align: right
+	
+.tab_item
+	display: none
+.tab_item:first-child 
+	display: block
+
+.top_phone .wrapper .tab
+	text-transform: uppercase
+	cursor: pointer
+
+.top_phone .wrapper .active
+	text-decoration: underline
+.top_phone .tab_item
+	display: none
+	font-size: 34px
+	font-family: "RobotoBold", sans-serif
+	
+.top_header
+	margin-top: 70px
+	h2
+		margin: 10px 0 0
+		font-family: "CleanvertisingLight", sans-serif
+		font-size: 36px
+
+.tabs_header
+	margin-top: 50px
+	ul, li
+		list-style-type: none
+		margin: 0
+		padding: 0
+		li
+			padding-left: 30px
+			position: relative
+			margin-bottom: 15px
+		i
+			position: absolute
+			left: 0
+			top: 0
+			line-height: 25px
+			color: #6f6a67
+	.tabs
+		.tab
+			display: inline-block
+			background-color: rgba(255,255,255, 0.25)
+			padding: 15px 18px
+			text-transform: uppercase
+			cursor: pointer
+			float: left
+			font-family: "RobotoBold", sans-serif
+			+transition(all .25s ease)
+			&.active 
+				background-color: rgba(255,255,255, 0.6)
+				color: #000
+	.tab_content
+		color: #000
+		text-transform: uppercase
+		font-family: "RobotoBold", sans-serif
+		font-size: 18px
+		background-color: rgba(255,255,255, 0.6)
+		padding: 12px 18px 16px
+	
+.fa-globe, .fa-credit-card, .fa-percent
+	font-size: 20px
+	
+	
+	
+.button 
+	border: none
+	cursor: pointer
+	display: inline-block
+	line-height: 46px
+	height: 46px
+	padding: 0 32px
+	background-color: #000
+	text-transform: uppercase
+	text-align: center
+	color: #fff
+	border-radius: 3px
+	font-size: 16px
+	font-family: "RobotoRegular", sans-serif
+	&.btn_red
+		background-color: $red_color
+	&.btn_green
+			background-color: $green_color
+	&.btn_white
+			background-color: #fff
+			color: #000
+	
+.button_wrap
+	text-align: right
+	
+a.button 
+	color: #fff
+	text-decoration: none
+	
+.s_tizers
+	+linear-gradient(#c6d8ee, #e8eff7)
+	color: $blue-color
+	font-family: "CleanvertisingLight", sans-serif
+	text-transform: uppercase
+	padding: 35px 0 0
+	span
+		font-size: 14px
+		display: block
+	strong
+		font-weight: normal
+		font-size: 23px
+		display: block
+	.row
+		> div
+			margin-bottom: 35px
+.tiz_img,
+.tiz_descr
+	display: inline-block
+	vertical-align: bottom
+	
+.tiz_img i
+	font-size: 70px
+	line-height: 48px
+	margin-right: 5px
+	
+.s_tizers .row
+	> div:nth-child(1)
+		i
+			margin-right: 10px
+		strong
+			font-size: 25px
+			line-height: 28px
+		span
+			font-size: 20px
+			line-height: 20px
+	> div:nth-child(2)
+		strong
+			font-size: 25px
+			line-height: 28px
+		span
+			font-size: 16px
+			line-height: 20px
+		i
+			position: relative
+			bottom: -5px
+	> div:nth-child(3)
+		strong
+			font-size: 22px
+			line-height: 25px
+		span
+			line-height: 25px
+	> div:nth-child(4)
+		span
+			font-size: 13px
+			line-height: 20px
+		strong
+			line-height: 30px
+		i
+			line-height: 55px
+			
+.profi_left
+	color: $red_color
+	i
+		font-size: 100px
+		line-height: 110px
+
+.profi_right
+	h3
+		display: inline-block
+		margin: 0
+		color: $red_color
+		font-size: 28px
+		
+form
+	background-color: #F7F7F7
+	padding: 25px 30px
+	border: $green_color 5px solid
+	border-radius: 5px
+	h2
+		text-transform: uppercase
+		margin-top: 0
+		font-family: "RobotoBold", sans-serif
+		font-size: 22px
+		color: $text-color
+		line-height: 22px
+		margin-bottom: 30px
+	label
+		display: block
+		margin-bottom: 15px
+		color: #666
+		font-size: 14px
+	input,
+	select
+		display: block
+		line-height: 40px
+		height: 40px
+		border: #D9D9D9 1px solid
+		box-shadow: 0 0 20px rgba(0,0,0,.06) inset
+		width: 100%
+		text-indent: 10px
+		font-size: 20px
+		margin-top: 5px
+		&:focus
+			box-shadow: $green-color 0 0 0 2px
+			border-radius: 3px
+			border-color: $green-color
+	.button_wrap
+		text-align: center
+		margin: 30px 0 10px
+
+.s_review
+	background-image: url(../img/middle_bg.jpg)
+	background-repeat: repeat-x
+	background-attachment: fixed
+	min-height: 500px
+	background-size: cover
+
+.review_item
+	color: #fff
+	text-align: center
+	h4
+		font-family: "Times New Roman", serif
+		font-style: italic
+		font-size: 22px
+		font-weight: normal
+		margin-top: 20px
+		margin-bottom: 20px
+	p
+		margin: 30px auto 0
+		display: inline-block
+		float: none
+		font-size: 15px
+	.image_wrap
+		text-align: center
+		img
+			width: 165px
+			height: 165px
+			display: inline-block
+			border-radius: 50%
+			border: #585A5B 10px solid
+		
+.hr
+	width: 100px
+	height: 1px
+	background-color: #CEA380
+	margin: auto
+	
+.owl-nav
+	div
+		width: 34px
+		height: 140px
+		background-image: url(../img/s_arrows.png)
+		opacity: 06
+		top: 20px
+		position: absolute
+		&:hover
+		opacity: 1 
+		&.owl-next
+			right: 0
+			background-position: top right
