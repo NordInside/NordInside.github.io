@@ -36,10 +36,19 @@ section
 		font-size: 50px
 		line-height: 56px
 		margin-bottom: 50px
+		font-family: "CleanvertisingLight", sans-serif
+		text-align: center
+		margin-top: 0
+		font-weight: normal
 		
+p strong
+	font-family: "RobotoBold", sans-serif
+	font-weight: normal
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
 	color: red
+	box-shadow: $red-color 0 0 0 2px
+	border-color: $red-color
 body input:required:valid,
 body textarea:required:valid
 	color: green
@@ -49,7 +58,7 @@ body textarea:required:valid
 	
 header 
 	min-height: 640px
-	background-image: url(/img/top_bg.jpg)
+	background-image: url(../img/top_bg.jpg)
 	background-position: top center
 	background-size: cover
 	color: #fff
@@ -218,3 +227,104 @@ a.button
 			line-height: 30px
 		i
 			line-height: 55px
+			
+.profi_left
+	color: $red_color
+	i
+		font-size: 100px
+		line-height: 110px
+
+.profi_right
+	h3
+		display: inline-block
+		margin: 0
+		color: $red_color
+		font-size: 28px
+		
+form
+	background-color: #F7F7F7
+	padding: 25px 30px
+	border: $green_color 5px solid
+	border-radius: 5px
+	h2
+		text-transform: uppercase
+		margin-top: 0
+		font-family: "RobotoBold", sans-serif
+		font-size: 22px
+		color: $text-color
+		line-height: 22px
+		margin-bottom: 30px
+	label
+		display: block
+		margin-bottom: 15px
+		color: #666
+		font-size: 14px
+	input,
+	select
+		display: block
+		line-height: 40px
+		height: 40px
+		border: #D9D9D9 1px solid
+		box-shadow: 0 0 20px rgba(0,0,0,.06) inset
+		width: 100%
+		text-indent: 10px
+		font-size: 20px
+		margin-top: 5px
+		&:focus
+			box-shadow: $green-color 0 0 0 2px
+			border-radius: 3px
+			border-color: $green-color
+	.button_wrap
+		text-align: center
+		margin: 30px 0 10px
+
+.s_review
+	background-image: url(../img/middle_bg.jpg)
+	background-repeat: repeat-x
+	background-attachment: fixed
+	min-height: 500px
+	background-size: cover
+
+.review_item
+	color: #fff
+	text-align: center
+	h4
+		font-family: "Times New Roman", serif
+		font-style: italic
+		font-size: 22px
+		font-weight: normal
+		margin-top: 20px
+		margin-bottom: 20px
+	p
+		margin: 30px auto 0
+		display: inline-block
+		float: none
+		font-size: 15px
+	.image_wrap
+		text-align: center
+		img
+			width: 165px
+			height: 165px
+			display: inline-block
+			border-radius: 50%
+			border: #585A5B 10px solid
+		
+.hr
+	width: 100px
+	height: 1px
+	background-color: #CEA380
+	margin: auto
+	
+.owl-nav
+	div
+		width: 34px
+		height: 140px
+		background-image: url(../img/s_arrows.png)
+		opacity: 06
+		top: 20px
+		position: absolute
+		&:hover
+		opacity: 1 
+		&.owl-next
+			right: 0
+			background-position: top right
