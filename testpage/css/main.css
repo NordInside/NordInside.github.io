@@ -2,11 +2,11 @@ body { font-family: "RobotoRegular", sans-serif; color: #333; font-weight: norma
 
 h1 { color: #fff; font-size: 60px; line-height: 56px; font-weight: bold; font-family: "CleanvertisingLight", sans-serif; margin: 0; }
 
-section { padding: 58px 0 68px; }
+section, footer { padding: 58px 0 68px; }
 
-section.s_dark h2, section.s_dark h3, section.s_dark p { color: #fff; }
+section.s_dark h2, section.s_dark h3, section.s_dark p, footer.s_dark h2, footer.s_dark h3, footer.s_dark p { color: #fff; }
 
-section h2 { color: #003469; font-size: 50px; line-height: 56px; margin-bottom: 50px; font-family: "CleanvertisingLight", sans-serif; text-align: center; margin-top: 0; font-weight: normal; }
+section h2, footer h2 { color: #003469; font-size: 50px; line-height: 56px; margin-bottom: 50px; font-family: "CleanvertisingLight", sans-serif; text-align: center; margin-top: 0; font-weight: normal; }
 
 p strong { font-family: "RobotoBold", sans-serif; font-weight: normal; }
 
@@ -20,17 +20,19 @@ header { min-height: 640px; background-image: url(../img/top_bg.jpg); background
 
 .logo { font-size: 40px; font-family: "RobotoBold", sans-serif; font-weight: bold; }
 
-.top_phone { text-align: right; }
+.top_phone, .bottom_phone { text-align: right; }
+
+.bottom_phone { text-align: center; margin-top: 50px; color: #9B1818; }
 
 .tab_item { display: none; }
 
 .tab_item:first-child { display: block; }
 
-.top_phone .wrapper .tab { text-transform: uppercase; cursor: pointer; }
+.top_phone .wrapper .tab, .bottom_phone .wrapper .tab { text-transform: uppercase; cursor: pointer; }
 
-.top_phone .wrapper .active { text-decoration: underline; }
+.top_phone .wrapper .active, .bottom_phone .wrapper .active { text-decoration: underline; }
 
-.top_phone .tab_item { display: none; font-size: 34px; font-family: "RobotoBold", sans-serif; }
+.top_phone .tab_item, .bottom_phone .tab_item { display: none; font-size: 34px; font-family: "RobotoBold", sans-serif; }
 
 .top_header { margin-top: 70px; }
 
@@ -116,7 +118,7 @@ form input:focus, form select:focus { -webkit-box-shadow: #67bc5c 0 0 0 2px; box
 
 form .button_wrap { text-align: center; margin: 30px 0 10px; }
 
-.s_review { background-image: url(../img/middle_bg.jpg); background-repeat: repeat-x; background-attachment: fixed; min-height: 500px; background-size: cover; }
+.s_review { background-image: url(../img/middle_bg.jpg); background-attachment: fixed; min-height: 500px; background-size: cover; }
 
 .review_item { color: #fff; text-align: center; }
 
@@ -133,3 +135,43 @@ form .button_wrap { text-align: center; margin: 30px 0 10px; }
 .owl-nav div { width: 34px; height: 140px; background-image: url(../img/s_arrows.png); opacity: 06; top: 20px; position: absolute; opacity: 1; }
 
 .owl-nav div.owl-next { right: 0; background-position: top right; }
+
+.owl-dots { width: 100%; margin-top: 20px; text-align: center; }
+
+.owl-dots .owl-dot { width: 14px; height: 14px; background-color: #fff; display: inline-block; margin: 0 4px; border-radius: 50%; opacity: .5; }
+
+.owl-dots .owl-dot.active { opacity: .8; }
+
+.s_back { background-image: url(../img/red_bg.jpg); background-position: top center; text-align: center; padding: 40px 0; }
+
+.s_back h3 { margin-top: 0; text-transform: uppercase; font-weight: normal; font-size: 26px; text-align: center; background-color: rgba(255, 255, 255, 0.13); padding: 10px 0; }
+
+.s_back .button { margin: auto; }
+
+.s_contacts { padding-bottom: 0; text-align: center; }
+
+.s_contacts .wrapper { margin-top: 15px; font-size: 18px; }
+
+.s_contacts h2 { color: #000; display: inline-block; vertical-align: middle; margin-bottom: 0; height: 45px; line-height: 45px; }
+
+.s_contacts .tabs { display: inline-block; vertical-align: middle; height: 45px; line-height: 45px; margin-left: 20px; }
+
+.s_contacts .tabs .tab { float: left; padding: 0 60px; border: #9B1818 5px solid; line-height: 38px; }
+
+.s_contacts .tabs .tab:first-child { border-radius: 3px 0 0 3px; }
+
+.s_contacts .tabs .tab:last-child { border-radius: 0 3px 3px 0; }
+
+.s_contacts .tabs .tab.active { background-color: #9B1818; color: #000; }
+
+.map { margin-top: 20px; min-height: 480px; background-color: #E1D6B0; }
+
+footer .button_wrap { text-align: center; margin-top: 20px; }
+
+footer h2 { color: #000; margin-bottom: 30px; }
+
+footer p { font-size: 18px; text-align: center; margin-top: 0; }
+
+#hidden_form, #form_back { max-width: 420px; margin: auto; position: relative; }
+
+#hidden_form h2, #form_back h2 { text-align: center; font-weight: normal; }

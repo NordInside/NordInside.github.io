@@ -22,7 +22,7 @@
 		display: inline-block;
 		margin-top: 10px;
 	}
-	.profi_item:last	child {
+	.profi_item:last child {
 		margin-bottom: 30px;
 	}
 }
@@ -42,7 +42,9 @@
 	.top_phone .tab_item {
 		font-size: 30px;
 	}
-
+	.s_contacts h2 {
+		margin-bottom: 20px;
+	}
 }
 
 @media only screen and (max-width: 600px) {
@@ -52,7 +54,7 @@
 		margin-bottom: 25px;
 	}
 
-	
+
 }
 
 
@@ -66,7 +68,6 @@
 		font-size: 40px;
 		line-height: 50px;
 	}
-
 	.top_header h2 {
 		font-size: 28px;
 	}
@@ -77,17 +78,23 @@
 	.button_wrap {
 		text-align: center;
 	}
-
-	
 	section h2 {
 		font-size: 38px;
 		line-height: 42px;
+	}
+.s_contacts .tabs .tab {
+		padding: 0 19px;
 	}
 }
 
 /* Custom, iPhone Retina */
 
-@media only screen and (max-width: 320px) {}
+@media only screen and (max-width: 330px) {
+	
+.s_contacts .tabs .tab {
+		padding: 0 16px;
+	}
+}
 
 
 /*==========  Mobile First Method  ==========*/
