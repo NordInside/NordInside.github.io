@@ -20,6 +20,8 @@ header { min-height: 640px; background-image: url(../img/top_bg.jpg); background
 
 .logo { font-size: 40px; font-family: "RobotoBold", sans-serif; font-weight: bold; }
 
+.logo1 { max-width: 150px; }
+
 .top_phone, .bottom_phone { text-align: right; }
 
 .bottom_phone { text-align: center; margin-top: 50px; color: #9B1818; }
